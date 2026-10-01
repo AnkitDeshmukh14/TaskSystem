@@ -4,7 +4,7 @@ import Dashboard from "./pages/Dashboard";
 import TaskDetails from "./pages/Taskdetails";
 import CreateTask from "./pages/Createtask";
 import EditTask from "./pages/Edittask";
-import ProtectedRoute from "./component/ProtectedRoute";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 
 function App() {
