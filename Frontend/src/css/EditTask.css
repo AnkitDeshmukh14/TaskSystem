@@ -1,0 +1,305 @@
+/* =========================
+   EDIT TASK PAGE
+========================= */
+
+.edit-task-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 30px 20px;
+}
+
+.edit-task-container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.edit-task-top {
+  margin-bottom: 18px;
+}
+
+.edit-back-btn {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.edit-back-btn:hover {
+  color: #1d4ed8;
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.edit-task-card {
+  background: white;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.edit-task-header {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.edit-task-header h1 {
+  margin: 0;
+
+  font-size: 27px;
+  color: #111827;
+}
+
+.edit-task-header p {
+  margin: 7px 0 0;
+
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.edit-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edit-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  flex: 1;
+}
+
+.edit-form-group label {
+  color: #374151;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.edit-form-group input,
+.edit-form-group textarea,
+.edit-form-group select {
+  width: 100%;
+
+  padding: 11px 13px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  background: white;
+  color: #111827;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.edit-form-group textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.edit-form-group input:focus,
+.edit-form-group textarea:focus,
+.edit-form-group select:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================
+   PRIORITY + STATUS ROW
+========================= */
+
+.edit-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+
+/* =========================
+   FILE UPLOAD
+========================= */
+
+.edit-file-box {
+  padding: 18px;
+
+  background: #f8fafc;
+
+  border: 1px dashed #cbd5e1;
+  border-radius: 9px;
+}
+
+.edit-file-box input {
+  border: none;
+  padding: 0;
+
+  background: transparent;
+  box-shadow: none;
+}
+
+.edit-file-box input:focus {
+  box-shadow: none;
+}
+
+.edit-file-box p {
+  margin: 10px 0 0;
+
+  color: #6b7280;
+
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.edit-selected-file {
+  display: block;
+
+  margin-top: 8px;
+
+  color: #2563eb;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.edit-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 5px;
+  padding-top: 20px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.edit-cancel-btn,
+.edit-submit-btn {
+  padding: 11px 20px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.edit-cancel-btn {
+  background: white;
+  color: #374151;
+
+  border: 1px solid #d1d5db;
+}
+
+.edit-cancel-btn:hover {
+  background: #f3f4f6;
+}
+
+.edit-submit-btn {
+  background: #2563eb;
+  color: white;
+
+  border: 1px solid #2563eb;
+}
+
+.edit-submit-btn:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================
+   TABLET / MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .edit-task-page {
+    padding: 20px 15px;
+  }
+
+  .edit-task-card {
+    padding: 22px 18px;
+  }
+
+  .edit-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .edit-task-header h1 {
+    font-size: 24px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+  .edit-task-page {
+    padding: 15px 10px;
+  }
+
+  .edit-task-card {
+    padding: 20px 15px;
+  }
+
+  .edit-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .edit-cancel-btn,
+  .edit-submit-btn {
+    width: 100%;
+  }
+}

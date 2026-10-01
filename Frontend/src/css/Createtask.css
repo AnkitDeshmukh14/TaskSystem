@@ -1,0 +1,301 @@
+/* =========================
+   CREATE TASK PAGE
+========================= */
+
+.create-task-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 30px 20px;
+}
+
+.create-task-container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.create-task-top {
+  margin-bottom: 18px;
+}
+
+.create-back-btn {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.create-back-btn:hover {
+  color: #1d4ed8;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.create-task-card {
+  background: white;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.create-task-header {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.create-task-header h1 {
+  margin: 0;
+
+  font-size: 27px;
+  color: #111827;
+}
+
+.create-task-header p {
+  margin: 7px 0 0;
+
+  color: #6b7280;
+  font-size: 14px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.create-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  flex: 1;
+}
+
+.create-form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.create-form-group input,
+.create-form-group textarea,
+.create-form-group select {
+  width: 100%;
+
+  padding: 11px 13px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  background: white;
+  color: #111827;
+
+  outline: none;
+
+  font-size: 14px;
+
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.create-form-group textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.create-form-group input:focus,
+.create-form-group textarea:focus,
+.create-form-group select:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================
+   TWO COLUMN ROW
+========================= */
+
+.create-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+
+/* =========================
+   FILE UPLOAD
+========================= */
+
+.create-file-box {
+  padding: 18px;
+
+  border: 1px dashed #cbd5e1;
+  border-radius: 9px;
+
+  background: #f8fafc;
+}
+
+.create-file-box input {
+  border: none;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.create-file-box input:focus {
+  box-shadow: none;
+}
+
+.create-file-box p {
+  margin: 10px 0 0;
+
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.selected-file {
+  display: block;
+
+  margin-top: 8px;
+
+  color: #2563eb;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.create-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 5px;
+  padding-top: 20px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.create-cancel-btn,
+.create-submit-btn {
+  padding: 11px 20px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.create-cancel-btn {
+  background: white;
+  color: #374151;
+
+  border: 1px solid #d1d5db;
+}
+
+.create-cancel-btn:hover {
+  background: #f3f4f6;
+}
+
+.create-submit-btn {
+  background: #2563eb;
+  color: white;
+
+  border: 1px solid #2563eb;
+}
+
+.create-submit-btn:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================
+   TABLET / MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .create-task-page {
+    padding: 20px 15px;
+  }
+
+  .create-task-card {
+    padding: 22px 18px;
+  }
+
+  .create-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .create-task-header h1 {
+    font-size: 24px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+  .create-task-page {
+    padding: 15px 10px;
+  }
+
+  .create-task-card {
+    padding: 20px 15px;
+  }
+
+  .create-form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .create-cancel-btn,
+  .create-submit-btn {
+    width: 100%;
+  }
+}

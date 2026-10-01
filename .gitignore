@@ -1,0 +1,11 @@
+# Backend
+Backend/.env
+Backend/env/
+Backend/project/db.sqlite3
+Backend/**/__pycache__/
+*.py[cod]
+
+# Frontend
+Frontend/node_modules/
+Frontend/dist/
+Frontend/.env
