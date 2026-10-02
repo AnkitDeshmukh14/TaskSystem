@@ -6,7 +6,7 @@ A full-stack Task Board Management System built using React and Django REST Fram
 
 Frontend: https://task-system-o4od.vercel.app/
 
-Backend API: https://tasksystem-backend-al79.onrender.com/api/
+Backend API: https://tasksystem-backend-al79.onrender.com/api/tasks/
 
 ## GitHub Repository
 
